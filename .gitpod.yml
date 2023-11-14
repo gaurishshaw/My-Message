@@ -1,0 +1,8 @@
+# .gitpod.yml
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - command: bash -c "flutter pub get && flutter run"
+ports:
+  - port: 8080
+    onOpen: ignore
